@@ -1,13 +1,5 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
-    <!-- Grid handle -->
-    <reportsviewer_admin_adminhtml_reportsviewer_index>
-        <update handle="editor" />
-        <reference name="content">
-            <!-- Grid parent block -->
-            <block type="reportsviewer/adminhtml_reportsviewer" name="reportsviewer" />
-        </reference>
-    </reportsviewer_admin_adminhtml_reportsviewer_index>
     <!-- View handle -->
 	<reportsviewer_admin_adminhtml_reportsviewer_view>
         <update handle="editor" />

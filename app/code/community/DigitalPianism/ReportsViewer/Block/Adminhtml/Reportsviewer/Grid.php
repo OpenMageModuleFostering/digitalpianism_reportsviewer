@@ -9,13 +9,11 @@ class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer_Grid extends Ma
     /**
      *	Constructor the grid
      */
-    public function __construct()
+    public function _construct()
     {
-        parent::__construct();
-        $this->setId('reportsviewerGrid');
-        $this->setDefaultSort('report_id');
-        $this->setDefaultDir('ASC');
         $this->setSaveParametersInSession(true);
+        $this->setId('reportsviewerGrid');
+        $this->setDefaultSort('added','DESC');
     }
 
     /**
@@ -24,65 +22,7 @@ class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer_Grid extends Ma
     protected function _prepareCollection()
     {
         // Create a collection
-        $collection = new Varien_Data_Collection();
-
-        // Add the reports from the var folder to the collection
-        $reportFolder = Mage::getBaseDir('var') . '/report';
-
-        // If the report folder is a directory
-        if (is_dir($reportFolder))
-        {
-            // And if we can read it
-            if ($dh = opendir($reportFolder))
-            {
-                // We loop through its readable files
-                while (($file = readdir($dh)) !== false)
-                {
-                    // Except "." and ".."
-                    if ($file != "." && $file != "..")
-                    {
-                        // For each file we create a new object
-                        $newItem = new Varien_Object();
-                        // Set some data
-                        $newItem->setReportId($file);
-                        $newItem->setFile($reportFolder . "/" . $file);
-                        // Set the date properly
-                        $dateAdded = Mage::getModel('core/date')->date(null,filemtime($reportFolder . "/" . $file));
-                        $newItem->setAdded($dateAdded);
-
-                        // Get the content of the file
-                        $content = file_get_contents($reportFolder . "/" . $file);
-                        // Decode it
-                        $content = unserialize($content);
-                        // Loop through the array
-                        foreach ($content as $key => $value)
-                        {
-                            // Value with key = 0 is always the error message
-                            if (!$key)
-                            {
-                                $newItem->setError($value);
-                            }
-                            elseif ($key == "url")
-                            {
-                                $newItem->setUrl($value);
-                            }
-                            elseif ($key == "script_name")
-                            {
-                                $newItem->setScriptName($value);
-                            }
-                            elseif ($key == "skin")
-                            {
-                                $newItem->setSkin($value);
-                            }
-                        }
-                        // Once the data are set, we add the object to the collection
-                        $collection->addItem($newItem);
-                    }
-                }
-                // We close the folder
-                closedir($dh);
-            }
-        }
+        $collection = Mage::getSingleton('reportsviewer/reports_collection');
 
         // We set the collection of the grid
         $this->setCollection($collection);
@@ -148,7 +88,7 @@ class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer_Grid extends Ma
             'filter' => false,
             'width' => '160',
             'is_system' => true,
-            'renderer'  => 'DigitalPianism_ReportsViewer_Block_Adminhtml_Template_Grid_Renderer_Action'
+            'renderer'  => 'reportsviewer/adminhtml_template_grid_renderer_action'
         ));
 
         return parent::_prepareColumns();
@@ -159,8 +99,8 @@ class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer_Grid extends Ma
      */
     protected function _prepareMassaction()
     {
-        $this->setMassactionIdField('report_id');
-        $this->getMassactionBlock()->setFormFieldName('reportsviewer');
+        $this->setMassactionIdField('id');
+        $this->getMassactionBlock()->setFormFieldName('ids');
 
         // Delete action
         $this->getMassactionBlock()->addItem('delete', array(

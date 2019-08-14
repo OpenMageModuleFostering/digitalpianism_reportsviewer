@@ -2,7 +2,7 @@
 <config>
     <modules>
         <DigitalPianism_ReportsViewer>
-            <version>0.0.5</version>
+            <version>0.1.0</version>
         </DigitalPianism_ReportsViewer>
     </modules>
 
@@ -31,6 +31,12 @@
     </adminhtml>
 
     <global>
+        <models>
+            <!-- Model declaration -->
+            <reportsviewer>
+                <class>DigitalPianism_ReportsViewer_Model</class>
+            </reportsviewer>
+        </models>
         <helpers>
             <!-- Helper declaration -->
             <reportsviewer>
