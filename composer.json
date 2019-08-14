@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/DigitalPianism_ReportsViewer",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "This module improves the way the category images are managed via the admin.",
+    "authors": [
+    {
+        "name": "Digital Pianism",
+        "email": "contact@digital-pianism.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package>
+    <name>DigitalPianism_ReportsViewer</name>
+    <version>0.0.4</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This module improves the way the category images are managed via the admin.</summary>
+    <description>&lt;h2&gt;Description&lt;/h2&gt;&#xD;
+&lt;p&gt;Ever been annoyed by the way Magento handles the error reports ? Having to manually check the var/reports folder and decode the content of the report could be painful, that's why we developped this new module.&lt;/p&gt;&#xD;
+&lt;p&gt;With this extension, you will be able to view and delete the Magento error reports from the backend. No more FTP and no more serialized value to read, the Error Reports Viewer module does everything for you.&#xD;
+&#xD;
+&lt;h2&gt;Reports List&lt;/h2&gt;&#xD;
+&lt;p&gt;Install the module, clear your cache and go to System &gt; Tools &gt; Reports Viewer&lt;/p&gt;&#xD;
+&lt;p&gt;Here you will have the list of all the reports that are in your var/reports folder.&lt;/p&gt;&#xD;
+&lt;p&gt;This list includes the following data:&lt;/p&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Report ID&lt;/li&gt;&#xD;
+&lt;li&gt;Error message&lt;/li&gt;&#xD;
+&lt;li&gt;URL&lt;/li&gt;&#xD;
+&lt;li&gt;Script Name&lt;/li&gt;&#xD;
+&lt;li&gt;Skin&lt;/li&gt;&#xD;
+&lt;li&gt;Report File Path&lt;/li&gt;&#xD;
+&lt;li&gt;Creation date&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&#xD;
+&lt;p&gt;From this grid, you have the possibility to mass delete reports (reports will be deleted from the var/reports folder) using the mass action dropdown.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h2&gt;View Report Details&lt;/h2&gt;&#xD;
+&#xD;
+&lt;p&gt;The only data not included in the grid is the trace.&lt;/p&gt;&#xD;
+&lt;p&gt;So when you click the "view details" link or if you click directly on the row, you will get access to a page that displays all the data of the grid PLUS the trace of the report.&lt;/p&gt;&#xD;
+&lt;p&gt;From this page, you can also delete a report.&lt;/p&gt;</description>
+    <notes>- Fix display date issue.</notes>
+    <authors><author><name>Digital Pianism</name><user>digitalpianism</user><email>contact@digital-pianism.com</email></author></authors>
+    <date>2015-08-12</date>
+    <time>11:06:36</time>
+    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ReportsViewer"><dir name="Block"><dir name="Adminhtml"><dir name="Reportsviewer"><file name="Grid.php" hash="175cb6e707be5c3079c75fc49f4ebf38"/><dir name="View"><file name="Form.php" hash="398b46d47682fb842fd385f13afa6f4b"/></dir><file name="View.php" hash="c234f392f8c3d030d27740ba8036715e"/></dir><file name="Reportsviewer.php" hash="df899cc86e9fdaf9d90ceed175125fab"/><dir name="Template"><dir name="Grid"><dir name="Renderer"><file name="Action.php" hash="ab39437238ad1c8e22f8dd3746865679"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="8320b9bdaedd283e702c745a03fbe1f1"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ReportsviewerController.php" hash="f5ba6ae65f5f5440ae966e2aee8c2dcc"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="b460c9d10c922c26c1bbf121933992a5"/><file name="config.xml" hash="c861e6c48024f85a2ca1e8c670c75f09"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ReportsViewer.xml" hash="bc4370b8f8905113dcf26afbbbd062c6"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="digitalpianism"><file name="reportsviewer.xml" hash="28618a433f486b05eb74a102803afe67"/></dir></dir><dir name="template"><dir name="digitalpianism"><dir name="reportsviewer"><file name="list.phtml" hash="933186d1346fe7e17e6fbfc3c3770abc"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>4.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+   <modules>
+      <DigitalPianism_ReportsViewer>
+         <active>true</active>
+         <codePool>community</codePool>
+      </DigitalPianism_ReportsViewer>
+   </modules>
+</config>

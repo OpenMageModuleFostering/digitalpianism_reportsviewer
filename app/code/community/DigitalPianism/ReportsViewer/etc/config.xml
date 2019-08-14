@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DigitalPianism_ReportsViewer>
+            <version>0.0.4</version>
+        </DigitalPianism_ReportsViewer>
+    </modules>
+
+    <admin>
+        <routers>
+            <!-- Admin route -->
+            <reportsviewer_admin>
+                <use>admin</use>
+                <args>
+                    <module>DigitalPianism_ReportsViewer</module>
+                    <frontName>reportsviewer_admin</frontName>
+                </args>
+            </reportsviewer_admin>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <!-- Backend layout update -->
+                <reportsviewer module="DigitalPianism_ReportsViewer">
+                    <file>digitalpianism/reportsviewer.xml</file>
+                </reportsviewer>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <global>
+        <helpers>
+            <!-- Helper declaration -->
+            <reportsviewer>
+                <class>DigitalPianism_ReportsViewer_Helper</class>
+            </reportsviewer>
+        </helpers>
+        <blocks>
+            <!-- Block declaration -->
+            <reportsviewer>
+                <class>DigitalPianism_ReportsViewer_Block</class>
+            </reportsviewer>
+        </blocks>
+
+    </global>
+</config>
