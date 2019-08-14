@@ -2,20 +2,20 @@
 <config>
     <modules>
         <DigitalPianism_ReportsViewer>
-            <version>0.1.1</version>
+            <version>0.1.2</version>
         </DigitalPianism_ReportsViewer>
     </modules>
 
     <admin>
         <routers>
             <!-- Admin route -->
-            <reportsviewer_admin>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>DigitalPianism_ReportsViewer</module>
-                    <frontName>reportsviewer_admin</frontName>
+                    <modules>
+                        <DigitalPianism_ReportsViewer before="Mage_Adminhtml">DigitalPianism_ReportsViewer_Adminhtml</DigitalPianism_ReportsViewer>
+                    </modules>
                 </args>
-            </reportsviewer_admin>
+            </adminhtml>
         </routers>
     </admin>
 

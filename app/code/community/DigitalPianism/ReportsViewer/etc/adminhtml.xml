@@ -11,7 +11,7 @@
 						<reportsviewer translate="title" module="reportsviewer">
 							<title>Reports Viewer</title>
 							<sort_order>10</sort_order>
-							<action>reportsviewer_admin/adminhtml_reportsviewer/index</action>
+							<action>adminhtml/reportsviewer/index</action>
 						</reportsviewer>
 					</children>
 				</tools>
