@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>DigitalPianism_ReportsViewer</name>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
@@ -32,11 +32,11 @@
 &lt;p&gt;The only data not included in the grid is the trace.&lt;/p&gt;&#xD;
 &lt;p&gt;So when you click the "view details" link or if you click directly on the row, you will get access to a page that displays all the data of the grid PLUS the trace of the report.&lt;/p&gt;&#xD;
 &lt;p&gt;From this page, you can also delete a report.&lt;/p&gt;</description>
-    <notes>- Fix display date issue.</notes>
+    <notes>- Fix a bug where the view details page was not working</notes>
     <authors><author><name>Digital Pianism</name><user>digitalpianism</user><email>contact@digital-pianism.com</email></author></authors>
-    <date>2015-08-12</date>
-    <time>11:06:36</time>
-    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ReportsViewer"><dir name="Block"><dir name="Adminhtml"><dir name="Reportsviewer"><file name="Grid.php" hash="175cb6e707be5c3079c75fc49f4ebf38"/><dir name="View"><file name="Form.php" hash="398b46d47682fb842fd385f13afa6f4b"/></dir><file name="View.php" hash="c234f392f8c3d030d27740ba8036715e"/></dir><file name="Reportsviewer.php" hash="df899cc86e9fdaf9d90ceed175125fab"/><dir name="Template"><dir name="Grid"><dir name="Renderer"><file name="Action.php" hash="ab39437238ad1c8e22f8dd3746865679"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="8320b9bdaedd283e702c745a03fbe1f1"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ReportsviewerController.php" hash="f5ba6ae65f5f5440ae966e2aee8c2dcc"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="b460c9d10c922c26c1bbf121933992a5"/><file name="config.xml" hash="c861e6c48024f85a2ca1e8c670c75f09"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ReportsViewer.xml" hash="bc4370b8f8905113dcf26afbbbd062c6"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="digitalpianism"><file name="reportsviewer.xml" hash="28618a433f486b05eb74a102803afe67"/></dir></dir><dir name="template"><dir name="digitalpianism"><dir name="reportsviewer"><file name="list.phtml" hash="933186d1346fe7e17e6fbfc3c3770abc"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <date>2015-08-13</date>
+    <time>07:41:09</time>
+    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ReportsViewer"><dir name="Block"><dir name="Adminhtml"><dir name="Reportsviewer"><file name="Grid.php" hash="175cb6e707be5c3079c75fc49f4ebf38"/><dir name="View"><file name="Form.php" hash="a8ababaf7401b1c294685eb483327c72"/></dir><file name="View.php" hash="c234f392f8c3d030d27740ba8036715e"/></dir><file name="Reportsviewer.php" hash="df899cc86e9fdaf9d90ceed175125fab"/><dir name="Template"><dir name="Grid"><dir name="Renderer"><file name="Action.php" hash="ab39437238ad1c8e22f8dd3746865679"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="8320b9bdaedd283e702c745a03fbe1f1"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ReportsviewerController.php" hash="f5ba6ae65f5f5440ae966e2aee8c2dcc"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="b460c9d10c922c26c1bbf121933992a5"/><file name="config.xml" hash="8c6c5b2e40eb2a7aca5f9cbe7f004cf2"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ReportsViewer.xml" hash="bc4370b8f8905113dcf26afbbbd062c6"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="digitalpianism"><file name="reportsviewer.xml" hash="28618a433f486b05eb74a102803afe67"/></dir></dir><dir name="template"><dir name="digitalpianism"><dir name="reportsviewer"><file name="list.phtml" hash="933186d1346fe7e17e6fbfc3c3770abc"/></dir></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>4.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
