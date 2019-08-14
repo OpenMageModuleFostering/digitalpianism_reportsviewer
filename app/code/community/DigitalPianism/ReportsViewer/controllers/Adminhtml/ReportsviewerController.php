@@ -113,7 +113,7 @@ class DigitalPianism_ReportsViewer_Adminhtml_ReportsviewerController extends Mag
 	/**
 	 * This is the action used to view the details of a report
      */
-	public function viewAction()
+	public function editAction()
 	{
 		// We first retrieve the report ID
 		$id = $this->getRequest()->getParam('id');
@@ -132,7 +132,7 @@ class DigitalPianism_ReportsViewer_Adminhtml_ReportsviewerController extends Mag
 
 		$this->getLayout()->getBlock('head')->setCanLoadExtJs(true);
 
-		$this->_addContent($this->getLayout()->createBlock('reportsviewer/adminhtml_reportsviewer_view'));
+		$this->_addContent($this->getLayout()->createBlock('reportsviewer/adminhtml_reportsviewer_edit'));
 
 		$this->getLayout()->getBlock('head')->setCanLoadTinyMce(true);
 

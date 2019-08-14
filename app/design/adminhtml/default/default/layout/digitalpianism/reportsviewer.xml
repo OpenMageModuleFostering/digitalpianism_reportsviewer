@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<layout version="0.1.0">
-    <!-- View handle -->
-	<reportsviewer_admin_adminhtml_reportsviewer_view>
-        <update handle="editor" />
-    </reportsviewer_admin_adminhtml_reportsviewer_view>
-</layout>

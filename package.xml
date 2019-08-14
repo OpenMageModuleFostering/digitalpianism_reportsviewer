@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>DigitalPianism_ReportsViewer</name>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
@@ -32,11 +32,11 @@
 &lt;p&gt;The only data not included in the grid is the trace.&lt;/p&gt;&#xD;
 &lt;p&gt;So when you click the "view details" link or if you click directly on the row, you will get access to a page that displays all the data of the grid PLUS the trace of the report.&lt;/p&gt;&#xD;
 &lt;p&gt;From this page, you can also delete a report.&lt;/p&gt;</description>
-    <notes>- Improve the module by using a custom collection to be able to filter, sort and change the limit of the grid.</notes>
+    <notes>- Improve the module in order to remove useless files and make the module lighter in terms of number of files</notes>
     <authors><author><name>Digital Pianism</name><user>digitalpianism</user><email>contact@digital-pianism.com</email></author></authors>
-    <date>2015-09-17</date>
-    <time>10:33:45</time>
-    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ReportsViewer"><dir name="Block"><dir name="Adminhtml"><dir name="Reportsviewer"><file name="Grid.php" hash="e9655334d95023c571172a26a504ca77"/><dir name="View"><file name="Form.php" hash="a8ababaf7401b1c294685eb483327c72"/></dir><file name="View.php" hash="c234f392f8c3d030d27740ba8036715e"/></dir><file name="Reportsviewer.php" hash="dafd160401e4ccd6b3a724199b53cc31"/><dir name="Template"><dir name="Grid"><dir name="Renderer"><file name="Action.php" hash="ab39437238ad1c8e22f8dd3746865679"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="f935bdafe07317db7f3ca3e29f5daabd"/></dir><dir name="Model"><file name="Report.php" hash="6a127d94d02c50463dc3836d7faf2628"/><dir name="Reports"><file name="Collection.php" hash="f331931709f211467faf7351221f00c8"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ReportsviewerController.php" hash="29769722164e5fe17a0448a57068fdda"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="b460c9d10c922c26c1bbf121933992a5"/><file name="config.xml" hash="df4cabc3fd37a939dacda036bf3b5fb2"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ReportsViewer.xml" hash="bc4370b8f8905113dcf26afbbbd062c6"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="digitalpianism"><file name="reportsviewer.xml" hash="79f624cf29d2c203ff48a1634f081ceb"/></dir></dir><dir name="template"><dir name="digitalpianism"><dir name="reportsviewer"><file name="list.phtml" hash="5fab98e4c9239730200be43f40a49ca1"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <date>2015-10-06</date>
+    <time>15:13:22</time>
+    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ReportsViewer"><dir name="Block"><dir name="Adminhtml"><dir name="Reportsviewer"><dir name="Edit"><file name="Form.php" hash="bc942115a68e06b8d55070acebe1ae30"/></dir><file name="Edit.php" hash="f663f46b866cab890d5e65bf518b9cd6"/><file name="Grid.php" hash="171701c72a3e79be881a3da5cd329330"/></dir><file name="Reportsviewer.php" hash="435ba2d5670972469abf33bf4a56c18b"/><dir name="Template"><dir name="Grid"><dir name="Renderer"><file name="Action.php" hash="9b199863366e23c861f8db6c678da774"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="f935bdafe07317db7f3ca3e29f5daabd"/></dir><dir name="Model"><file name="Report.php" hash="6a127d94d02c50463dc3836d7faf2628"/><dir name="Reports"><file name="Collection.php" hash="f331931709f211467faf7351221f00c8"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ReportsviewerController.php" hash="1e80c6df64e895030eb8ab3ef3d1ef2c"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="b460c9d10c922c26c1bbf121933992a5"/><file name="config.xml" hash="54049e98e6c9701dff37eab72a015fa0"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ReportsViewer.xml" hash="bc4370b8f8905113dcf26afbbbd062c6"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>4.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

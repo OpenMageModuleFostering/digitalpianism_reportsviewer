@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Class DigitalPianism_ReportsViewer_Block_Adminhtml_Reportsviewer_View_Form
+ * Class DigitalPianism_ReportsViewer_Block_Adminhtml_Reportsviewer_Edit_Form
  * This is the form block to view the report data
  */
-class DigitalPianism_ReportsViewer_Block_Adminhtml_Reportsviewer_View_Form extends Mage_Adminhtml_Block_Widget_Form
+class DigitalPianism_ReportsViewer_Block_Adminhtml_Reportsviewer_Edit_Form extends Mage_Adminhtml_Block_Widget_Form
 {
 	/**
 	 * Prepare the form of the edit reportsviewer page

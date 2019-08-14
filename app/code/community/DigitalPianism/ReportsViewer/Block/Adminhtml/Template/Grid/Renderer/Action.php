@@ -18,7 +18,7 @@ class DigitalPianism_ReportsViewer_Block_Adminhtml_Template_Grid_Renderer_Action
         // for href actions
         $actions[] = array(
             '@' => array(
-                'href'  => $this->getUrl("*/*/view", array('id' => $row->getData('report_id')))
+                'href'  => $this->getUrl("*/*/edit", array('id' => $row->getData('report_id')))
             ),
             '#'	=> Mage::helper('reportsviewer')->__('View Details')
         );

@@ -9,11 +9,12 @@ class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer_Grid extends Ma
     /**
      *	Constructor the grid
      */
-    public function _construct()
+    public function __construct()
     {
-        $this->setSaveParametersInSession(true);
+        parent::__construct();
         $this->setId('reportsviewerGrid');
         $this->setDefaultSort('added','DESC');
+        $this->setSaveParametersInSession(true);
     }
 
     /**
@@ -119,7 +120,7 @@ class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer_Grid extends Ma
      */
     public function getRowUrl($row)
     {
-        return $this->getUrl('*/*/view', array('id' => $row->getData('report_id')));
+        return $this->getUrl('*/*/edit', array('id' => $row->getData('report_id')));
     }
 
 }

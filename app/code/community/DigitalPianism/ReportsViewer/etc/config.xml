@@ -2,7 +2,7 @@
 <config>
     <modules>
         <DigitalPianism_ReportsViewer>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </DigitalPianism_ReportsViewer>
     </modules>
 
@@ -18,17 +18,6 @@
             </reportsviewer_admin>
         </routers>
     </admin>
-
-    <adminhtml>
-        <layout>
-            <updates>
-                <!-- Backend layout update -->
-                <reportsviewer module="DigitalPianism_ReportsViewer">
-                    <file>digitalpianism/reportsviewer.xml</file>
-                </reportsviewer>
-            </updates>
-        </layout>
-    </adminhtml>
 
     <global>
         <models>

@@ -3,27 +3,18 @@
 /**
  * Class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer
  */
-class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer extends Mage_Adminhtml_Block_Template
+class DigitalPianism_Reportsviewer_Block_Adminhtml_Reportsviewer extends Mage_Adminhtml_Block_Widget_Grid_Container
 {
     /**
-     * Block's template
-     *
-     * @var string
+     * Constructor
      */
-    protected $_template = 'digitalpianism/reportsviewer/list.phtml';
-
-    protected function _prepareLayout()
+    public function __construct()
     {
-        parent::_prepareLayout();
-
-        $this->setChild('reportsviewerGrid',
-            $this->getLayout()->createBlock('reportsviewer/adminhtml_reportsviewer_grid')
-        );
-    }
-
-    public function getGridHtml()
-    {
-        return $this->getChildHtml('reportsviewerGrid');
+        $this->_controller = 'adminhtml_reportsviewer';
+        $this->_blockGroup = 'reportsviewer';
+        $this->_headerText = Mage::helper('reportsviewer')->__('Reports Viewer');
+        parent::__construct();
+        $this->_removeButton('add');
     }
 
 }
